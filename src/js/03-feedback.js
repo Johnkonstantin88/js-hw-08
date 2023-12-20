@@ -15,7 +15,7 @@ function onInput(evt) {
 }
 
 function onInputValue() {
-  let formValue = JSON.parse(localStorage.getItem(VALUE_KEY));
+  let formValue = JSON.parse(localStorage.getItem(VALUE_KEY) ?? "");
   if (formValue) {
     const {
       elements: { email, message },
